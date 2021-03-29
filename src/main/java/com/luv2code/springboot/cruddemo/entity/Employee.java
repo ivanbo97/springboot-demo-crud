@@ -23,7 +23,7 @@ public class Employee {
 	private String lastName;
 	
 	@Column(name="email")
-	private String emailString;
+	private String email;
 	
 	public Employee() {
 		
@@ -32,7 +32,7 @@ public class Employee {
 	public Employee(String firstName, String lastName, String emailString) {
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.emailString = emailString;
+		this.email = emailString;
 	}
 
 	public int getId() {
@@ -59,18 +59,18 @@ public class Employee {
 		this.lastName = lastName;
 	}
 
-	public String getEmailString() {
-		return emailString;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setEmailString(String emailString) {
-		this.emailString = emailString;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", emailString="
-				+ emailString + "]";
+		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email="
+				+ email + "]";
 	}
 
 }
